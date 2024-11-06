@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:background="@drawable/background"
+            >
+
+
+            <TextView
+                android:id="@+id/title"
+                android:paddingStart="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:transitionName="textview1"
+                android:textColor="#fff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:text="Here's your first step with us"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                />
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+
+
+                android:layout_gravity="end|center"
+                android:layout_height="100dp"
+                android:layout_marginTop="-5dp"
+                android:transitionName="image"
+                android:src="@drawable/ic_launcher_background"/>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="25dp"
+            android:padding="10dp"
+            app:cardElevation="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="-35dp"
+            android:layout_marginBottom="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cons"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_pic"
+                        android:layout_width="130dp"
+                        android:layout_height="0dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="120dp"
+                        android:src="@drawable/ic_launcher_background"
+
+
+                        app:civ_border_color="#3498db"
+                        app:civ_border_width="3dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter username"
+                    android:id="@+id/username_l"
+                    app:hintTextColor="#000"
+                    app:boxBackgroundColor="#fff"
+                    android:layout_below="@+id/cons"
+                    android:layout_margin="5dp"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/username"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Gender"
+                    app:hintTextColor="#000"
+                    android:id="@+id/gender_l"
+                    app:boxBackgroundColor="#fff"
+                    android:layout_below="@+id/username_l"
+                    android:layout_margin="5dp"
+
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/gender"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Dob"
+                    android:id="@+id/dob_l"
+                    app:hintTextColor="#000"
+                    app:boxBackgroundColor="#fff"
+                    android:layout_margin="5dp"
+
+                    android:layout_below="@+id/gender_l"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/dob"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:inputType="number|date" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:id="@+id/bio_l"
+                    android:hint="Enter Address"
+                    app:hintTextColor="#000"
+                    app:boxBackgroundColor="#fff"
+                    android:layout_below="@id/dob_l"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/address"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Complete"
+                    android:textColor="#fff"
+                    android:layout_below="@+id/bio_l"
+                    android:id="@+id/complete"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:background="#3498db"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</ScrollView>

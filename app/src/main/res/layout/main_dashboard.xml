@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Let's book"
+        android:textColor="#000"
+        android:paddingLeft="20dp"
+
+        android:textSize="20sp"
+        android:transitionName="title"
+        />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_marginTop="-5dp"
+        android:layout_height="wrap_content"
+        android:text="Your next bus"
+        android:paddingLeft="20dp"
+
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:transitionName="title"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#000"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Source"
+                android:layout_gravity="start"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:transitionName="title"
+                />
+            <Spinner
+                android:background="@null"
+                android:id="@+id/spinner_routefrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="start"
+                android:textSize="30sp"
+                android:transitionName="title"
+                android:backgroundTint="@color/black"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#000"/>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Destination"
+                android:layout_gravity="start"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:transitionName="title"
+                />
+            <Spinner
+                android:layout_gravity="start"
+                android:background="@null"
+                android:id="@+id/spinner_routeto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter city"
+
+
+                android:transitionName="title"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#000"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@color/main"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/findbus"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:transitionName="btn"
+        android:shadowRadius="@integer/google_play_services_version"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:text="Find Bus" />
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+</RelativeLayout>

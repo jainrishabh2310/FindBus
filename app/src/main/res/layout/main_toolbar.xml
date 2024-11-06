@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:background="#fff">
+            <TextView
+                android:layout_width="105dp"
+                android:layout_height="45dp"
+               android:gravity="center"
+                android:text="FindBus"
+
+android:layout_marginBottom="20dp"
+                android:textColor="#000"
+                android:layout_gravity="start"
+                android:textSize="25sp"
+                />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/main_dashboard"/>
+
+</LinearLayout>

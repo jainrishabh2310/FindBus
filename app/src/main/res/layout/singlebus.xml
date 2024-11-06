@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardElevation="20dp"
+        app:contentPadding="6dp"
+
+        android:id="@+id/appiont_CV"
+        android:backgroundTint="#FBF8F8"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_blue_light" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bus Name"
+                    android:id="@+id/singlebusname"
+                    android:textStyle="bold"
+                    android:layout_marginStart="13dp"
+                    style="@style/TextAppearance.Material3.HeadlineSmall"
+                    android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center|center_vertical"
+                    android:layout_marginStart="10dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/appointment_date"
+
+                        android:text="UP 150089"
+                        android:layout_marginStart="5dp"
+                        android:textStyle="bold"
+                        style="@style/TextAppearance.AppCompat"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bus From"
+                            android:id="@+id/singlebusfrom"
+                            android:textStyle="bold"
+                            style="@style/TextAppearance.Material3.HeadlineSmall"
+                            android:textSize="20sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="From"
+                            style="@style/TextAppearance.Material3.HeadlineSmall"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_launcher_background"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bus To"
+                            android:id="@+id/singletobus"
+                            android:textStyle="bold"
+                            style="@style/TextAppearance.Material3.HeadlineSmall"
+                            android:textSize="20sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="To"
+                            style="@style/TextAppearance.Material3.HeadlineSmall"
+                            android:textSize="15sp"/>
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 Seats Available"
+                        android:layout_marginStart="13dp"
+                        android:id="@+id/seatavailablle"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        style="@style/TextAppearance.Material3.HeadlineSmall"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹400"
+                        android:id="@+id/busprice"
+                        android:textColor="#00ff00"
+                        android:layout_marginRight="13dp"
+                        android:textStyle="bold"
+                        style="@style/TextAppearance.Material3.HeadlineSmall"
+                        android:textSize="20sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

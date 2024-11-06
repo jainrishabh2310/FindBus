@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "154324220751",
+    "project_id": "findbus-83c6e",
+    "storage_bucket": "findbus-83c6e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154324220751:android:68511ef3b943feee1ba33a",
+        "android_client_info": {
+          "package_name": "com.example.findbus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7pCx05nBHcW7w4M_i5ZbNNZUSx02k58w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
